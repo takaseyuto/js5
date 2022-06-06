@@ -86,13 +86,6 @@
     sphere.position.set(0,0.5,0); //位置を指定
     scene.add(sphere);   // シーンに追加 
 
-    const all  = new THREE.Group();
-    all.add(box);
-    all.add(cone);
-    all.add(sphere);
-    all.position.set(0,0,0);
-    scene.add(all);
-
     update();
 
     function update() {
@@ -108,9 +101,6 @@
       sphere.rotation.x += 0.01;
       sphere.rotation.y += 0.01;
 
-      //allの回転
-      all.rotation.x +=0.01;
-      all.rotation.y +=0.02;
     };
 
   }
